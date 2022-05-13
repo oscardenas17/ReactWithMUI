@@ -3,8 +3,10 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 
 //boton personalizado
-const BlueButton = styled(Button)(({theme})=>({
-  backgroundColor: theme.palette.otherColor.main,
+// const BlueButton = styled(Button)(({theme})=>({
+  const BlueButton = styled(Button)(()=>({
+  backgroundColor: "skyblue",
+  // backgroundColor: theme.palette.otherColor.main,  llamado al theme
   color: "#888",
   margin:5,
   "&:hover":{
