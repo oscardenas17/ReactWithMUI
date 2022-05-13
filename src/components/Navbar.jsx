@@ -1,8 +1,15 @@
+import { AppBar, styled, Toolbar } from "@mui/material"
 
+const StyledToolbar = styled()({
+  display: "flex",
+  justifyContent: "space-between"
+})
 
 const navbar = () => {
   return (
-    <div>navbar</div>
+    <AppBar position="sticky">
+    <StyledToolbar>navbar</StyledToolbar>
+    </AppBar>
   )
 }
 
