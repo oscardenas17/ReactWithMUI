@@ -1,31 +1,17 @@
-import { Button, styled } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
-
-
-//boton personalizado
-// const BlueButton = styled(Button)(({theme})=>({
-  const BlueButton = styled(Button)(()=>({
-  backgroundColor: "skyblue",
-  // backgroundColor: theme.palette.otherColor.main,  llamado al theme
-  color: "#888",
-  margin:5,
-  "&:hover":{
-    backgroundColor: "ligthblue",
-  },
-  "&:disabled":{
-    backgroundColor: "gray",
-    color: "white",
-  },
-}))
-
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import { Box, Container, Stack } from "@mui/material";
 
 function App() {
   return (
-    <div>
-     <Button variant="outlined" startIcon={<DeleteIcon />}>
-  Delete
-</Button>
-    </div>
+    <Box>
+      <Stack direction="row" spacing={2} justifyContent="center">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
