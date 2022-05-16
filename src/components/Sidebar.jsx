@@ -7,6 +7,7 @@ const Sidebar = () => {
       bgcolor="skyblue" 
       flex={1} 
       p={2}
+      //Breakpoints
       sx={ {display: {xs:"none", sm: "block"} }}
     >
       Sidebar
